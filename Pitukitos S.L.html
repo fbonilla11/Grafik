@@ -16,7 +16,7 @@
     <section>
         <h1 class="titulo">Estate atento a tus videojuegos preferidos</h1>
         <h2 class="descripcion">En esta pagina encontraras las ultimas noticias, reviews, especificaciones<br> de tus videojuegos preferidos y MUCHO MAS</h2>
-
+        <!--
         <form action="">
             <input type="text" class="nombre" size="20"  maxlength="50" placeholder="Nombre" required><br>
             <input type="text" class="apellidos" size="20"  maxlength="50" placeholder="Apellidos"required>
@@ -39,7 +39,92 @@
             <label for="revista">Recepción de la revista digital</label><br>
     
             <button class="EnviarFormulario">Enviar</button>
-        </form>
+        </form>-->
+
+        <div id="formulario">
+            <h1>¡Registrate ahora!</h1>
+            <div class="textoFormulario">
+              <input type="text" name="text" required/>
+              <label for="text" class="label-name">
+                <span class="content-name">
+                  Nombre
+                </span>
+              </label>
+            </div>
+            
+            <div class="textoFormulario">
+              <input type="text" name="text" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+                  Apellidos
+                </span>
+              </label>
+            </div>
+            
+            <div class="textoFormulario">
+              <input type="text" name="text" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+                  Email
+                </span>
+              </label>
+            </div>
+            
+            <div class="textoFormulario">
+              <input type="Password" name="text" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+                  Password
+                </span>
+              </label>
+            </div>
+            
+            <div class="textoFormulario">
+              <input type="Password" name="text" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+                  Password
+                </span>
+              </label>
+            </div>
+            
+            
+            <br><div class="genero">
+              <p>Sexo</p>
+                <input type="radio" class="hombre" name="sexo" value="hombre">
+                  <label for="hombre">Hombre</label>
+                <input type="radio" class="mujer" name="sexo" value="mujer">
+                  <label for="mujer">Mujer</label>
+                <input type="radio" class="otro" name="sexo" value="otro">
+                  <label for="otro">Otro</label>
+            
+                              
+            </div><br>
+            
+              <input type="date" class="fecha" name="Fecha de Nacimiento" id="fecha">
+            
+              
+              <div class="textoFormulario">
+                <input type="text" name="text" required/>
+                <label for="text" class="label-name">
+                  <span class="content-name">
+                    Direccion
+                  </span>
+                </label>
+              </div><br>
+            
+              <input type="checkbox" class="notificaciones" name="notificaciones" value="Si">
+                <label for="notificaciones">Activar notificaciones</label><br>
+              <input type="checkbox" class="revista" name="revista" value="Si">
+                <label for="revista">Recepción de la revista digital</label><br>
+            
+            <div class="textoFormulario">
+                <button class="EnviarFormulario">Enviar</button>
+            </div>
+        </div>
+       
+        
+
         <img class="imgdescripcion" src="imgs/fondo.png" alt="">
 
         <!--Aqui iria una imagen general de la pagina-->
