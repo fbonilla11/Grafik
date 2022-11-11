@@ -63,7 +63,7 @@ input{
     border: none;
 }
 
-.nombre,.apellidos,.contraseña,.contraseña2{
+#nombre,#apellidos,#contraseña,#contraseña2{
     height: 1.5em;
     background-color: white;
     width: 60%;
@@ -77,34 +77,34 @@ input:focus{
     transform: rotatex(10deg);
 }
 
-.hombre,.mujer,form p{
+#hombre,#mujer,form p{
     width: 10%;
     margin-left: 125px;
 }
-.email,.fecha{
+#email,#fecha{
     height: 1.5em;
     margin: 2.5px;
     margin-left: 125px;
     width: 60%;
 }
-.notificaciones{
+#notificaciones{
     margin: 5px;
     margin-left: 125px;
     width: 10%;
 }
-.direccion{
+#direccion{
     height: 1.5em;
     margin-left: 125px;
     width: 60%;
 }
-.imgdescripcion{
+#imgdescripcion{
     display: flex;
     justify-content: center;
     width: 75%;
     margin-top: 5em;
     margin-bottom: 5em;
 }
-.caracteristicas{
+#caracteristicas{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -134,7 +134,7 @@ figcaption h3,figcaption p{
     font-family:'Custom';
     src: url("fonts/Pixels.ttf");
 }
-.boton{
+#boton{
     margin: 20px;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ figcaption h3,figcaption p{
     background:linear-gradient(180deg,purple,CYAN,blue);
 }
 
-.enviarFormulario{
+#enviarFormulario{
     margin: 20px;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,13 @@ figcaption h3,figcaption p{
     height: 3em;
     background:linear-gradient(180deg,purple,CYAN,blue);
 }
-
+#textocorreo,#contraseñacoincide,#textoContraseña{
+    display: none;
+    color:blue;
+}
+#sexo{
+    color: black;
+}
 @media (max-width: 832px){
 
     header img{
@@ -172,7 +178,7 @@ figcaption h3,figcaption p{
         margin-left: 0em;
     }
 
-    .caracteristicas{
+    #caracteristicas{
         flex-direction: column;
     }
 
