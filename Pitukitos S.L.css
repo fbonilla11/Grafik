@@ -14,10 +14,8 @@ header img{
 }
 section{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
     flex-wrap: wrap;    
-    flex-direction: column;
 }
 section h1{
     display: flex;
@@ -32,43 +30,72 @@ section h2{
     justify-content: center;
     width: 100%;
     color: white;
-    font-size: 2.75em;
+    font-size: 3em;
     font-family:Custom;
 }
 form{
     display: block;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column ;
     align-items: center;
-    width: 60%;
+    justify-content: center;
+    width: 50%;
 }
 form button{
-    margin-left: 4em;
+    margin: 4em;
+    margin-left: 250px;
     width:8em;
     height:3em;
     background:linear-gradient(180deg,purple,CYAN,blue);
 }
-.nombre, .apellidos, .contraseña, .contraseña2{
-    align-items: left;
-    width: 80%;
+
+form button:hover{
+    margin: 4em;
+    margin-left: 250px;
+    width:12em;
+    height:4.5em;
+    transition: 1.5s;
+    transform:rotate(0deg);
+    background:linear-gradient(180deg,purple,CYAN,blue);
 }
+
+input{
+    border: none;
+}
+
+.nombre,.apellidos,.contraseña,.contraseña2{
+    height: 1.5em;
+    background-color: white;
+    width: 60%;
+    margin: 2.5px;
+    margin-left: 125px;
+}
+
+input:focus{
+    background-color: lightblue;
+    border: solid;
+    transform: rotatex(10deg);
+}
+
 .hombre,.mujer,form p{
     width: 10%;
+    margin-left: 125px;
 }
-.email{
-    width: 80%;
+.email,.fecha{
+    height: 1.5em;
+    margin: 2.5px;
+    margin-left: 125px;
+    width: 60%;
 }
-.fecha{
-    width: 80%;
-    margin-top: 15px;
-}
-.notificaciones,.revista{
+.notificaciones{
+    margin: 5px;
+    margin-left: 125px;
     width: 10%;
-    justify-content: space-around;
 }
 .direccion{
-    width: 80%;
-    margin-bottom: 15px;
+    height: 1.5em;
+    margin-left: 125px;
+    width: 60%;
 }
 .imgdescripcion{
     display: flex;
@@ -82,7 +109,6 @@ form button{
     justify-content: space-between;
     width: 100%;
 }
-
 figure{
     display: flex;
     justify-content: center;
@@ -104,154 +130,22 @@ figcaption h3,figcaption p{
     justify-content: center;
     width: 100%;
 }
-
-/*PRUEBA CSS FORMULARIO*/
-
-    #formulario{
-        border: solid;
-        width: 100%;
-        display: block;
-        flex: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #formulario h1{
-        width: 100%;
-        border: solid;
-    }
-
-  .textoFormulario {
-    margin: 5px;
-    display: flex;
-    width: 100%;
-    position: relative;
-    height: 30px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .textoFormulario input {
-    width: 40%;
-    height: 100%;
-    color: #fff;
-    padding-top: 20px;
-    border: none;
-    background-color: rgb(142, 214, 238);
-  }
-
-  .textoFormulario input label span {
-    width: 30%;
-  }
-
-  .textoFormulario label {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 30%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid white;
-  }
-  .textoFormulario label::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
-  }
-  
-  .content-name {
-    width: 30%;;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    padding-bottom: 5px;
-    transition: all 0.3s ease;
-  }
-  .textoFormulario input:focus {
-    outline: none;
-  }
-  .textoFormulario input:focus + .label-name .content-name,
-  .textoFormulario input:valid + .label-name .content-name {
-    transform: translateY(-50%);
-    font-size: 14px;
-    left: 0px;
-    color: blue;
-  }
-  .textoFormulario input:focus + .label-name::after,
-  .textoFormulario input:valid + .label-name::after {
-    transform: translateX(0%);
-  }
-  
-  input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid blue;
-    outline-offset: max(2px, 0.15em);
-  }
-  
-  .textoFormulario-control:focus-within {
-    color: black;
-  }
-  .genero{
-    background-color: lightblue;
-    width: 30%;
-    justify-content: center;
-  }
-
-  
-  .fecha{
-    margin-top: 15px;
-    justify-content: center;
-    width: 30%;
-    height: 2em;
-    background: lightgrey;
-  }
-  
-  input[type="checkbox"] {
-    /* ...existing styles */
-    display: grid;
-    place-content: center;
-  }
-  
-  input[type="checkbox"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
     font-family:'Custom';
     src: url("fonts/Pixels.ttf");
 }
 .boton{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 8em;
+    height: 3em;
+    background:linear-gradient(180deg,purple,CYAN,blue);
+}
+
+.enviarFormulario{
+    margin: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
